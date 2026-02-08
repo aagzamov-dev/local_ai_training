@@ -1,0 +1,579 @@
+{
+  "tag": "before",
+  "timestamp": "20260208_140651",
+  "api_url": "http://localhost:8000/v1/chat/completions",
+  "model": "default",
+  "total_samples": 10,
+  "json_valid_percentage": 100.0,
+  "schema_valid_percentage": 100.0,
+  "results": [
+    {
+      "input_query": "ean 3960299802690",
+      "raw_response_text": "{\"query\":\"\",\"filters\":{\"brand\":[],\"categories\":[],\"price\":{\"min\":null,\"max\":null,\"currency\":\"EUR\"},\"in_stock\":null,\"sku\":null,\"ean\":\"3960299802690\"},\"sort\":{\"by\":\"relevance\",\"order\":\"desc\"},\"page\":1,\"page_size\":24,\"confidence\":1.0}",
+      "parsed_json": {
+        "query": "",
+        "filters": {
+          "brand": [],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": "3960299802690"
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 1.0
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "",
+        "filters": {
+          "brand": [],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": "3960299802690"
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 1.0
+      },
+      "latency_seconds": 1.6199557880008797
+    },
+    {
+      "input_query": "sku AHF7VP1I",
+      "raw_response_text": "{\"query\":\"\",\"filters\":{\"brand\":[],\"categories\":[],\"price\":{\"min\":null,\"max\":null,\"currency\":\"EUR\"},\"in_stock\":null,\"sku\":\"AHF7VP1I\",\"ean\":null},\"sort\":{\"by\":\"relevance\",\"order\":\"desc\"},\"page\":1,\"page_size\":24,\"confidence\":1.0}",
+      "parsed_json": {
+        "query": "",
+        "filters": {
+          "brand": [],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": "AHF7VP1I",
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 1.0
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "",
+        "filters": {
+          "brand": [],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": "AHF7VP1I",
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 1.0
+      },
+      "latency_seconds": 0.8370690499996272
+    },
+    {
+      "input_query": "lg Cameras silver bluetooth ergonomic less than 640 eur",
+      "raw_response_text": "{\"query\":\"silver ergonomic\",\"filters\":{\"brand\":[\"LG\"],\"categories\":[],\"price\":{\"min\":null,\"max\":640,\"currency\":\"EUR\"},\"in_stock\":null,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"price\",\"order\":\"asc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "silver ergonomic",
+        "filters": {
+          "brand": [
+            "LG"
+          ],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": 640,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "asc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "silver ergonomic",
+        "filters": {
+          "brand": [
+            "LG"
+          ],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": 640,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "asc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.8760774029997265
+    },
+    {
+      "input_query": "LG Tablets portable white noise cancelling available now",
+      "raw_response_text": "{\"query\":\"portable white noise cancelling\",\"filters\":{\"brand\":[\"LG\"],\"categories\":[\"Tablets\"],\"price\":{\"min\":null,\"max\":null,\"currency\":\"EUR\"},\"in_stock\":true,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"relevance\",\"order\":\"desc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "portable white noise cancelling",
+        "filters": {
+          "brand": [
+            "LG"
+          ],
+          "categories": [
+            "Tablets"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": true,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "portable white noise cancelling",
+        "filters": {
+          "brand": [
+            "LG"
+          ],
+          "categories": [
+            "Tablets"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": true,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.8996801499997673
+    },
+    {
+      "input_query": "Coffee Machines mechanical more than 1380 eur",
+      "raw_response_text": "{\"query\":\"mechanical\",\"filters\":{\"brand\":[],\"categories\":[\"Coffee Machines\"],\"price\":{\"min\":1380,\"max\":null,\"currency\":\"EUR\"},\"in_stock\":null,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"price\",\"order\":\"desc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "mechanical",
+        "filters": {
+          "brand": [],
+          "categories": [
+            "Coffee Machines"
+          ],
+          "price": {
+            "min": 1380,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "mechanical",
+        "filters": {
+          "brand": [],
+          "categories": [
+            "Coffee Machines"
+          ],
+          "price": {
+            "min": 1380,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.9240337409992208
+    },
+    {
+      "input_query": "lowest price dell Monitors ergonomic windows",
+      "raw_response_text": "{\"query\":\"ergonomic windows\",\"filters\":{\"brand\":[\"Dell\"],\"categories\":[\"Monitors\"],\"price\":{\"min\":null,\"max\":null,\"currency\":\"EUR\"},\"in_stock\":null,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"price\",\"order\":\"asc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "ergonomic windows",
+        "filters": {
+          "brand": [
+            "Dell"
+          ],
+          "categories": [
+            "Monitors"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "asc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "ergonomic windows",
+        "filters": {
+          "brand": [
+            "Dell"
+          ],
+          "categories": [
+            "Monitors"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "asc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.9371252119999554
+    },
+    {
+      "input_query": "Monitors android 4k noise cancelling between 480 and 1750 euros",
+      "raw_response_text": "{\"query\":\"android 4k noise cancelling\",\"filters\":{\"brand\":[],\"categories\":[\"Monitors\"],\"price\":{\"min\":480,\"max\":1750,\"currency\":\"EUR\"},\"in_stock\":null,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"price\",\"order\":\"desc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "android 4k noise cancelling",
+        "filters": {
+          "brand": [],
+          "categories": [
+            "Monitors"
+          ],
+          "price": {
+            "min": 480,
+            "max": 1750,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "android 4k noise cancelling",
+        "filters": {
+          "brand": [],
+          "categories": [
+            "Monitors"
+          ],
+          "price": {
+            "min": 480,
+            "max": 1750,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.9867605680010456
+    },
+    {
+      "input_query": "Dyson vacuum cleaners gold smart in stock",
+      "raw_response_text": "{\"query\":\"gold smart\",\"filters\":{\"brand\":[\"Dyson\"],\"categories\":[\"Vacuum Cleaners\"],\"price\":{\"min\":null,\"max\":null,\"currency\":\"EUR\"},\"in_stock\":true,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"relevance\",\"order\":\"desc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "gold smart",
+        "filters": {
+          "brand": [
+            "Dyson"
+          ],
+          "categories": [
+            "Vacuum Cleaners"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": true,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "gold smart",
+        "filters": {
+          "brand": [
+            "Dyson"
+          ],
+          "categories": [
+            "Vacuum Cleaners"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": true,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.9255474310011778
+    },
+    {
+      "input_query": "cheapest Siemens console wireless ultra oled less than 1030 eur",
+      "raw_response_text": "{\"query\":\"wireless ultra oled\",\"filters\":{\"brand\":[\"Siemens\"],\"categories\":[],\"price\":{\"min\":null,\"max\":1030,\"currency\":\"EUR\"},\"in_stock\":null,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"price\",\"order\":\"asc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "wireless ultra oled",
+        "filters": {
+          "brand": [
+            "Siemens"
+          ],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": 1030,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "asc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "wireless ultra oled",
+        "filters": {
+          "brand": [
+            "Siemens"
+          ],
+          "categories": [],
+          "price": {
+            "min": null,
+            "max": 1030,
+            "currency": "EUR"
+          },
+          "in_stock": null,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "price",
+          "order": "asc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.9657871229992452
+    },
+    {
+      "input_query": "premium apple Laptops ready to ship",
+      "raw_response_text": "{\"query\":\"\", \"filters\":{\"brand\":[\"Apple\"],\"categories\":[\"Laptops\"],\"price\":{\"min\":null,\"max\":null,\"currency\":\"EUR\"},\"in_stock\":true,\"sku\":null,\"ean\":null},\"sort\":{\"by\":\"relevance\",\"order\":\"desc\"},\"page\":1,\"page_size\":24,\"confidence\":0.98}",
+      "parsed_json": {
+        "query": "",
+        "filters": {
+          "brand": [
+            "Apple"
+          ],
+          "categories": [
+            "Laptops"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": true,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "json_valid": true,
+      "schema_valid": true,
+      "schema_errors": [],
+      "normalized_json": {
+        "query": "",
+        "filters": {
+          "brand": [
+            "Apple"
+          ],
+          "categories": [
+            "Laptops"
+          ],
+          "price": {
+            "min": null,
+            "max": null,
+            "currency": "EUR"
+          },
+          "in_stock": true,
+          "sku": null,
+          "ean": null
+        },
+        "sort": {
+          "by": "relevance",
+          "order": "desc"
+        },
+        "page": 1,
+        "page_size": 24,
+        "confidence": 0.98
+      },
+      "latency_seconds": 0.9436689330013905
+    }
+  ]
+}
