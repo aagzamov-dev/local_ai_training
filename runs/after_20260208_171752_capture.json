@@ -1,0 +1,131 @@
+{
+  "tag": "after",
+  "timestamp": "20260208_171752",
+  "api_url": "http://localhost:8000/v1/chat/completions",
+  "model": "runs/merged_model",
+  "total_samples": 10,
+  "json_valid_percentage": 0.0,
+  "schema_valid_percentage": 0.0,
+  "results": [
+    {
+      "input_query": "ean 3960299802690",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.007504361999963294
+    },
+    {
+      "input_query": "sku AHF7VP1I",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.0037069079999128007
+    },
+    {
+      "input_query": "lg Cameras silver bluetooth ergonomic less than 640 eur",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.0033188580000569345
+    },
+    {
+      "input_query": "LG Tablets portable white noise cancelling available now",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.0037049239999760175
+    },
+    {
+      "input_query": "Coffee Machines mechanical more than 1380 eur",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.0031147240006248467
+    },
+    {
+      "input_query": "lowest price dell Monitors ergonomic windows",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.003584670000236656
+    },
+    {
+      "input_query": "Monitors android 4k noise cancelling between 480 and 1750 euros",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.0033113600002252497
+    },
+    {
+      "input_query": "Dyson vacuum cleaners gold smart in stock",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.003361596999639005
+    },
+    {
+      "input_query": "cheapest Siemens console wireless ultra oled less than 1030 eur",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.0033177730001625605
+    },
+    {
+      "input_query": "premium apple Laptops ready to ship",
+      "raw_response_text": "",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "HTTP error: 404 Client Error: Not Found for url: http://localhost:8000/v1/chat/completions"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.003339820000292093
+    }
+  ]
+}

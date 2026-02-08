@@ -1,0 +1,131 @@
+{
+  "tag": "after",
+  "timestamp": "20260208_171959",
+  "api_url": "http://localhost:8000/v1/chat/completions",
+  "model": "/var/www/local_ai_training/runs/merged_model",
+  "total_samples": 10,
+  "json_valid_percentage": 0.0,
+  "schema_valid_percentage": 0.0,
+  "results": [
+    {
+      "input_query": "ean 3960299802690",
+      "raw_response_text": " asio  = 0  c d }  =  c d  : c d }  : c d } : c d } : c } : c d } : } c d } : : c d } : : c } : c } : : c } : : c } : : c } : : : c } : : : : c } : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 20.185877853999955
+    },
+    {
+      "input_query": "sku AHF7VP1I",
+      "raw_response_text": " sku AHFI ",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 0.15336222099995211
+    },
+    {
+      "input_query": "lg Cameras silver bluetooth ergonomic less than 640 eur",
+      "raw_response_text": "lg :  = 0 e dashes less less true Ť— less any less less less i any less less i any less less i any less less i any less less i any less less i any less lessi any less lessi any less lessi any less lessi any less lessi any less many lessi any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any all less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less i any less less i any less less i any less less i any less say all less all your any less all and any less all and any less all and all less all and all those all and all those all and all good all those all all all and all those all and all those all and all those all and, all, all and all a and, all and all a all, all and all and all and all and every, all and all, all and all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all, all,",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.78945028399994
+    },
+    {
+      "input_query": "LG Tablets portable white noise cancelling available now",
+      "raw_response_text": " LG tablets white noise cancelling available white noise cancellable white noise cancellation available whiteneiiaas and student student student student student student student student student student student student student student student student student student student student student  student student student student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student   student  student  student   student  student  student   student  student  student   student  student  student   student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student  student i student  student  student i student i student  student i student i student  student i student i student i student i student i student i student i student i student i student i student i student i student i student i student i student i student i student i student i student i student i student \n\n student i student i student \n\n student i student i student \n\n student i student i student Student i student Student Student Student Student Student 　 Student Student Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student  Student",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.904811444000188
+    },
+    {
+      "input_query": "Coffee Machines mechanical more than 1380 eur",
+      "raw_response_text": "uí ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.947516397999607
+    },
+    {
+      "input_query": "lowest price dell Monitors ergonomic windows",
+      "raw_response_text": " lowest price dellimiters ﻿ longest price dellimiters ﻿ longest price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long price d long",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.785254278000139
+    },
+    {
+      "input_query": "Monitors android 4k noise cancelling between 480 and 1750 euros",
+      "raw_response_text": " Monuments =  dimensionales œuclassi  dimensionales œuclassi student each o student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less i student less student less i student less student lessi student less student lessi student less student less student lessi student less student less student less student less student less student less student less student less student your student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student less student always student less student less student always student less student always student less student always student always student; student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student always student student always student student always student student always student student student always student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student always student student always student student always student student always student student always student student thousands student student always student student always student student often student always student studentail student always student always student studentail student always student student always student studentail student student",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.73138362500049
+    },
+    {
+      "input_query": "Dyson vacuum cleaners gold smart in stock",
+      "raw_response_text": " Drobusterum cleanorums gold lightup s dobbicourceums gold light up time you time you /so light time you / test timeke less less timescale faster less less timescale faster less timescale faster timescale less timescale faster timescale less timescale faster timescale less timescale faster timescale less timescale faster timescale less timescale faster timescale less timescale faster timescale less timescale faster timescale less timescale faster let time scale less timescale faster let time scale less timescale faster let time scale less timescale faster let time scale less timescale fast time scale less timescale faster let time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale fast time scale less timescale time scale less timescale fast time scale less timescale time scale less timescale time scale less timescale time scale less timescale time scale less timescale time scale less timescale time scale less time scale time scale less timescale time scale less time scale time scale less time scale time scale less time scale time scale less time scale time scale less time scale time scale less time scale time scale less time scale time scale less time scale time scale time less time scale time scale time less time scale time scale time less time scale time scale time less time scale time scale time less time scale time scale time scale time scale time less time scale time scale time scale time time scale time scale time time scale time scale time time scale time) time scale time time scale time scale time time scale time $ time scale time time scale time\n\n time scale time scale time scale time scale time time scale time time scale time time scale time time scale time time http time http http http http@ http http@ http any http http any http any of those words in any number changes in context, any number) current context current context哐 new context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context context",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.610071898999195
+    },
+    {
+      "input_query": "cheapest Siemens console wireless ultra oled less than 1030 eur",
+      "raw_response_text": "cheasioSI = notcrliaos = notci and school i context student i school i context student i school student i context student i school student i context student i school student i context student student i school student i context student student i school student student i context student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student student class student student student student student class student student student student class student student student class student student student class student student student class student student class student student class student student class student student class student student class student student class student student class student student class student student class student student class student student class student student class student student class student student class student class student student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student class student table student class student table student student table student student table student student table student student table student student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student table student",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.659603652000442
+    },
+    {
+      "input_query": "premium apple Laptops ready to ship",
+      "raw_response_text": "uístamp ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿",
+      "parsed_json": null,
+      "json_valid": false,
+      "schema_valid": false,
+      "schema_errors": [
+        "no JSON object found"
+      ],
+      "normalized_json": null,
+      "latency_seconds": 7.751623901999665
+    }
+  ]
+}
