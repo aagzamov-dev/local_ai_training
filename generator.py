@@ -2,7 +2,7 @@ import json
 import random
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 BRANDS = [
     "Apple",
@@ -61,6 +61,29 @@ CATEGORY_ALIASES: Dict[str, List[str]] = {
     "Gaming Consoles": ["Gaming Consoles", "gaming consoles", "console", "consoles"],
     "Vacuum Cleaners": ["Vacuum Cleaners", "vacuum cleaners", "vacuum", "cleaner"],
     "Coffee Machines": ["Coffee Machines", "coffee machines", "coffee machine", "espresso machine"],
+}
+
+BRAND_CATEGORY_COMPAT: Dict[str, List[str]] = {
+    "Apple": ["Smartphones", "Laptops", "Tablets", "Headphones", "Smart Watches", "Keyboards", "Mice", "Monitors"],
+    "Samsung": ["Smartphones", "Tablets", "Televisions", "Headphones", "Smart Watches", "Monitors", "Cameras"],
+    "Sony": ["Televisions", "Headphones", "Cameras", "Gaming Consoles", "Monitors"],
+    "Microsoft": ["Gaming Consoles", "Keyboards", "Mice", "Laptops", "Headphones"],
+    "Nintendo": ["Gaming Consoles"],
+    "Razer": ["Gaming Consoles", "Keyboards", "Mice", "Laptops", "Headphones"],
+    "Logitech": ["Keyboards", "Mice", "Headphones"],
+    "Dell": ["Laptops", "Monitors", "Keyboards", "Mice", "Headphones"],
+    "HP": ["Laptops", "Monitors", "Keyboards", "Mice", "Headphones"],
+    "Lenovo": ["Laptops", "Tablets", "Monitors", "Keyboards", "Mice"],
+    "Asus": ["Laptops", "Monitors", "Keyboards", "Mice"],
+    "Acer": ["Laptops", "Monitors", "Keyboards", "Mice"],
+    "Canon": ["Cameras"],
+    "Nikon": ["Cameras"],
+    "Bosch": ["Washing Machines", "Refrigerators", "Vacuum Cleaners", "Coffee Machines"],
+    "Miele": ["Washing Machines", "Refrigerators", "Vacuum Cleaners", "Coffee Machines"],
+    "Siemens": ["Washing Machines", "Refrigerators", "Coffee Machines"],
+    "Philips": ["Vacuum Cleaners", "Coffee Machines", "Headphones"],
+    "Dyson": ["Vacuum Cleaners"],
+    "LG": ["Televisions", "Monitors", "Smartphones", "Washing Machines", "Refrigerators"],
 }
 
 RESIDUAL_PHRASES: List[List[str]] = [
@@ -223,7 +246,10 @@ def construct_intent() -> SearchIntent:
         intent.brand = random.choice(BRANDS)
 
     if intent_type in ["brand_cat", "brand_cat_res", "cat_res", "cat_only"]:
-        intent.category = random.choice(CATEGORIES)
+        if intent.brand and intent.brand in BRAND_CATEGORY_COMPAT:
+            intent.category = random.choice(BRAND_CATEGORY_COMPAT[intent.brand])
+        else:
+            intent.category = random.choice(CATEGORIES)
 
     if intent_type in ["brand_cat_res", "cat_res"]:
         intent.residual_tokens = pick_residuals(1, 3)
@@ -236,12 +262,13 @@ def construct_intent() -> SearchIntent:
     stock_phrase = maybe_stock(intent)
 
     parts: List[str] = []
+    residual_text = " ".join(intent.residual_tokens).strip()
 
     if sort_phrase:
         parts.append(sort_phrase)
 
-    if intent.residual_tokens and random.random() < 0.5:
-        parts.append(" ".join(intent.residual_tokens))
+    if residual_text and random.random() < 0.5:
+        parts.append(residual_text)
 
     if intent.brand:
         parts.append(pick_brand_surface(intent.brand))
@@ -252,8 +279,8 @@ def construct_intent() -> SearchIntent:
         if intent.brand and random.random() < 0.35:
             parts.append("products")
 
-    if intent.residual_tokens and " ".join(intent.residual_tokens) not in " ".join(parts):
-        parts.append(" ".join(intent.residual_tokens))
+    if residual_text and residual_text not in " ".join(parts):
+        parts.append(residual_text)
 
     if price_phrase:
         parts.append(price_phrase)

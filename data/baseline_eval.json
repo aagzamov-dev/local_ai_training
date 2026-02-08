@@ -28,22 +28,22 @@
     "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'portable gold black'."
   },
   {
-    "input_query": "Canon coffee machines lightweight ready to ship",
+    "input_query": "Canon Cameras below 1120 eur",
     "expected_output_json": {
-      "query": "lightweight",
+      "query": "",
       "filters": {
         "brand": [
           "Canon"
         ],
         "categories": [
-          "Coffee Machines"
+          "Cameras"
         ],
         "price": {
           "min": null,
-          "max": null,
+          "max": 1120,
           "currency": "EUR"
         },
-        "in_stock": true,
+        "in_stock": null,
         "sku": null,
         "ean": null
       },
@@ -53,17 +53,17 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.97
+      "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Residuals kept: 'lightweight'."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
   },
   {
-    "input_query": "top tier Siemens in stock",
+    "input_query": "DELL products",
     "expected_output_json": {
       "query": "",
       "filters": {
         "brand": [
-          "Siemens"
+          "Dell"
         ],
         "categories": [],
         "price": {
@@ -71,24 +71,140 @@
           "max": null,
           "currency": "EUR"
         },
-        "in_stock": true,
+        "in_stock": null,
         "sku": null,
         "ean": null
       },
       "sort": {
-        "by": "price",
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.85
+    },
+    "note": "Type: Query. Brand extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "portable wireless mechanical Miele vacuum",
+    "expected_output_json": {
+      "query": "portable wireless mechanical",
+      "filters": {
+        "brand": [
+          "Miele"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.95
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'portable wireless mechanical'."
+  },
+  {
+    "input_query": "wireless Monitors above 250 eur",
+    "expected_output_json": {
+      "query": "wireless",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": 250,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
         "order": "desc"
       },
       "page": 1,
       "page_size": 24,
       "confidence": 0.88
     },
-    "note": "Type: Query. Brand extracted. Stock constraint extracted. Sort extracted. No residuals; query is empty."
+    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'wireless'."
   },
   {
-    "input_query": "mechanical Cameras",
+    "input_query": "qled smart watches under 1840 eur",
     "expected_output_json": {
-      "query": "mechanical",
+      "query": "qled",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Smart Watches"
+        ],
+        "price": {
+          "min": null,
+          "max": 1840,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.88
+    },
+    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'qled'."
+  },
+  {
+    "input_query": "Dyson vacuum cleaners less than 1800 eur",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Dyson"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": 1800,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "Cameras",
+    "expected_output_json": {
+      "query": "",
       "filters": {
         "brand": [],
         "categories": [
@@ -111,218 +227,18 @@
       "page_size": 24,
       "confidence": 0.85
     },
-    "note": "Type: Query. Category extracted. Residuals kept: 'mechanical'."
+    "note": "Type: Query. Category extracted. No residuals; query is empty."
   },
   {
-    "input_query": "coffee machine available now",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Coffee Machines"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": true,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.87
-    },
-    "note": "Type: Query. Category extracted. Stock constraint extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "ean 8834813676065",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": "8834813676065"
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 1.0
-    },
-    "note": "Type: EAN. Exact identifier extracted."
-  },
-  {
-    "input_query": "Razer Washing Machines ultra lightweight below 190 eur",
-    "expected_output_json": {
-      "query": "ultra lightweight",
-      "filters": {
-        "brand": [
-          "Razer"
-        ],
-        "categories": [
-          "Washing Machines"
-        ],
-        "price": {
-          "min": null,
-          "max": 190,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.98
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'ultra lightweight'."
-  },
-  {
-    "input_query": "premium Nintendo Mice",
+    "input_query": "Nikon Cameras ready to ship",
     "expected_output_json": {
       "query": "",
       "filters": {
         "brand": [
-          "Nintendo"
+          "Nikon"
         ],
         "categories": [
-          "Mice"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "price",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.96
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Sort extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "Lenovo Monitors pro portable mechanical more than 1070 eur available now",
-    "expected_output_json": {
-      "query": "pro portable mechanical",
-      "filters": {
-        "brand": [
-          "Lenovo"
-        ],
-        "categories": [
-          "Monitors"
-        ],
-        "price": {
-          "min": 1070,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": true,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.98
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Stock constraint extracted. Residuals kept: 'pro portable mechanical'."
-  },
-  {
-    "input_query": "Tablets available",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Tablets"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": true,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.87
-    },
-    "note": "Type: Query. Category extracted. Stock constraint extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "slim vacuum less than 1420 eur",
-    "expected_output_json": {
-      "query": "slim",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Vacuum Cleaners"
-        ],
-        "price": {
-          "min": null,
-          "max": 1420,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.88
-    },
-    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'slim'."
-  },
-  {
-    "input_query": "Razer Smartphones mechanical portable mac ready to ship",
-    "expected_output_json": {
-      "query": "mechanical portable mac",
-      "filters": {
-        "brand": [
-          "Razer"
-        ],
-        "categories": [
-          "Smartphones"
+          "Cameras"
         ],
         "price": {
           "min": null,
@@ -341,16 +257,102 @@
       "page_size": 24,
       "confidence": 0.97
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Residuals kept: 'mechanical portable mac'."
+    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. No residuals; query is empty."
   },
   {
-    "input_query": "DELL vacuum cleaners gaming max oled",
+    "input_query": "cheapest Lg Refrigerators bluetooth ergonomic available",
     "expected_output_json": {
-      "query": "gaming max oled",
+      "query": "bluetooth ergonomic",
       "filters": {
         "brand": [
-          "Dell"
+          "LG"
         ],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Sort extracted. Residuals kept: 'bluetooth ergonomic'."
+  },
+  {
+    "input_query": "Refrigerators portable pro gaming",
+    "expected_output_json": {
+      "query": "portable pro gaming",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.85
+    },
+    "note": "Type: Query. Category extracted. Residuals kept: 'portable pro gaming'."
+  },
+  {
+    "input_query": "Logitech Keyboards minimum 720 eur",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Logitech"
+        ],
+        "categories": [
+          "Keyboards"
+        ],
+        "price": {
+          "min": 720,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "top tier Vacuum Cleaners",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [],
         "categories": [
           "Vacuum Cleaners"
         ],
@@ -364,25 +366,51 @@
         "ean": null
       },
       "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.86
+    },
+    "note": "Type: Query. Category extracted. Sort extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "noise cancelling Refrigerators above 830 eur in stock",
+    "expected_output_json": {
+      "query": "noise cancelling",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": 830,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
         "by": "relevance",
         "order": "desc"
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.95
+      "confidence": 0.9
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'gaming max oled'."
+    "note": "Type: Query. Category extracted. Price constraint extracted. Stock constraint extracted. Residuals kept: 'noise cancelling'."
   },
   {
-    "input_query": "Nintendo Laptops bluetooth ergonomic",
+    "input_query": "most expensive Cameras",
     "expected_output_json": {
-      "query": "bluetooth ergonomic",
+      "query": "",
       "filters": {
-        "brand": [
-          "Nintendo"
-        ],
+        "brand": [],
         "categories": [
-          "Laptops"
+          "Cameras"
         ],
         "price": {
           "min": null,
@@ -394,14 +422,14 @@
         "ean": null
       },
       "sort": {
-        "by": "relevance",
+        "by": "price",
         "order": "desc"
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.95
+      "confidence": 0.86
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'bluetooth ergonomic'."
+    "note": "Type: Query. Category extracted. Sort extracted. No residuals; query is empty."
   },
   {
     "input_query": "coffee machine silver pro less than 1870 eur",
@@ -432,7 +460,7 @@
     "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'silver pro'."
   },
   {
-    "input_query": "gold Canon Refrigerators",
+    "input_query": "gold Canon Cameras",
     "expected_output_json": {
       "query": "gold",
       "filters": {
@@ -440,7 +468,7 @@
           "Canon"
         ],
         "categories": [
-          "Refrigerators"
+          "Cameras"
         ],
         "price": {
           "min": null,
@@ -462,7 +490,7 @@
     "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'gold'."
   },
   {
-    "input_query": "lowest price samsung Televisions oled",
+    "input_query": "lowest price samsung Tablets oled",
     "expected_output_json": {
       "query": "oled",
       "filters": {
@@ -470,7 +498,7 @@
           "Samsung"
         ],
         "categories": [
-          "Televisions"
+          "Tablets"
         ],
         "price": {
           "min": null,
@@ -492,9 +520,9 @@
     "note": "Type: Query. Brand extracted. Category extracted. Sort extracted. Residuals kept: 'oled'."
   },
   {
-    "input_query": "premium Nikon Cameras silver noise cancelling",
+    "input_query": "premium Nikon Cameras noise cancelling",
     "expected_output_json": {
-      "query": "silver noise cancelling",
+      "query": "noise cancelling",
       "filters": {
         "brand": [
           "Nikon"
@@ -519,18 +547,18 @@
       "page_size": 24,
       "confidence": 0.96
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Sort extracted. Residuals kept: 'silver noise cancelling'."
+    "note": "Type: Query. Brand extracted. Category extracted. Sort extracted. Residuals kept: 'noise cancelling'."
   },
   {
-    "input_query": "Siemens Cameras",
+    "input_query": "pro Siemens Washing Machines",
     "expected_output_json": {
-      "query": "",
+      "query": "pro",
       "filters": {
         "brand": [
           "Siemens"
         ],
         "categories": [
-          "Cameras"
+          "Washing Machines"
         ],
         "price": {
           "min": null,
@@ -549,105 +577,19 @@
       "page_size": 24,
       "confidence": 0.95
     },
-    "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'pro'."
   },
   {
-    "input_query": "Lenovo Keyboards ios over 300 eur",
+    "input_query": "high end Keyboards above 280 eur available",
     "expected_output_json": {
-      "query": "ios",
+      "query": "",
       "filters": {
-        "brand": [
-          "Lenovo"
-        ],
+        "brand": [],
         "categories": [
           "Keyboards"
         ],
         "price": {
-          "min": 300,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.98
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'ios'."
-  },
-  {
-    "input_query": "sku 4FRHOCN9",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": "4FRHOCN9",
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 1.0
-    },
-    "note": "Type: SKU. Exact identifier extracted."
-  },
-  {
-    "input_query": "lightweight mechanical Razer Headphones at most 1880 eur ready to ship",
-    "expected_output_json": {
-      "query": "lightweight mechanical",
-      "filters": {
-        "brand": [
-          "Razer"
-        ],
-        "categories": [
-          "Headphones"
-        ],
-        "price": {
-          "min": null,
-          "max": 1880,
-          "currency": "EUR"
-        },
-        "in_stock": true,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.98
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Stock constraint extracted. Residuals kept: 'lightweight mechanical'."
-  },
-  {
-    "input_query": "high end Samsung mac white in stock",
-    "expected_output_json": {
-      "query": "mac white",
-      "filters": {
-        "brand": [
-          "Samsung"
-        ],
-        "categories": [],
-        "price": {
-          "min": null,
+          "min": 280,
           "max": null,
           "currency": "EUR"
         },
@@ -661,191 +603,23 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.88
+      "confidence": 0.91
     },
-    "note": "Type: Query. Brand extracted. Stock constraint extracted. Sort extracted. Residuals kept: 'mac white'."
+    "note": "Type: Query. Category extracted. Price constraint extracted. Stock constraint extracted. Sort extracted. No residuals; query is empty."
   },
   {
-    "input_query": "sku UUBCXULJ",
+    "input_query": "Dyson vacuum cleaners smart more than 1210 eur",
     "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": "UUBCXULJ",
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 1.0
-    },
-    "note": "Type: SKU. Exact identifier extracted."
-  },
-  {
-    "input_query": "Smart Watches portable at most 810 eur",
-    "expected_output_json": {
-      "query": "portable",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Smart Watches"
-        ],
-        "price": {
-          "min": null,
-          "max": 810,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.88
-    },
-    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'portable'."
-  },
-  {
-    "input_query": "lowest price Acer coffee machines ready to ship",
-    "expected_output_json": {
-      "query": "",
+      "query": "smart",
       "filters": {
         "brand": [
-          "Acer"
-        ],
-        "categories": [
-          "Coffee Machines"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": true,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "price",
-        "order": "asc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.98
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Sort extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "dell Refrigerators lightweight 4k max over 1400 eur",
-    "expected_output_json": {
-      "query": "lightweight 4k max",
-      "filters": {
-        "brand": [
-          "Dell"
-        ],
-        "categories": [
-          "Refrigerators"
-        ],
-        "price": {
-          "min": 1400,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.98
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'lightweight 4k max'."
-  },
-  {
-    "input_query": "sku EEDTJVZH",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": "EEDTJVZH",
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 1.0
-    },
-    "note": "Type: SKU. Exact identifier extracted."
-  },
-  {
-    "input_query": "premium windows portable wireless Headphones over 160 eur",
-    "expected_output_json": {
-      "query": "windows portable wireless",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Headphones"
-        ],
-        "price": {
-          "min": 160,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "price",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.89
-    },
-    "note": "Type: Query. Category extracted. Price constraint extracted. Sort extracted. Residuals kept: 'windows portable wireless'."
-  },
-  {
-    "input_query": "Razer Vacuum Cleaners",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [
-          "Razer"
+          "Dyson"
         ],
         "categories": [
           "Vacuum Cleaners"
         ],
         "price": {
-          "min": null,
+          "min": 1210,
           "max": null,
           "currency": "EUR"
         },
@@ -859,124 +633,12 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.95
+      "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'smart'."
   },
   {
-    "input_query": "Coffee Machines",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Coffee Machines"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.85
-    },
-    "note": "Type: Query. Category extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "Televisions",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Televisions"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.85
-    },
-    "note": "Type: Query. Category extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "ean 7921714197467",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": "7921714197467"
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 1.0
-    },
-    "note": "Type: EAN. Exact identifier extracted."
-  },
-  {
-    "input_query": "noise cancelling smart wireless DELL Cameras",
-    "expected_output_json": {
-      "query": "noise cancelling smart wireless",
-      "filters": {
-        "brand": [
-          "Dell"
-        ],
-        "categories": [
-          "Cameras"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.95
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'noise cancelling smart wireless'."
-  },
-  {
-    "input_query": "Hp Washing Machines between 760 and 1750 euros",
+    "input_query": "hp Laptops under 190 eur",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -984,11 +646,11 @@
           "HP"
         ],
         "categories": [
-          "Washing Machines"
+          "Laptops"
         ],
         "price": {
-          "min": 760,
-          "max": 1750,
+          "min": null,
+          "max": 190,
           "currency": "EUR"
         },
         "in_stock": null,
@@ -1006,19 +668,53 @@
     "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
   },
   {
-    "input_query": "sku E8G8JDP0",
+    "input_query": "cheapest Canon Cameras at most 650 eur available now",
     "expected_output_json": {
       "query": "",
       "filters": {
-        "brand": [],
-        "categories": [],
+        "brand": [
+          "Canon"
+        ],
+        "categories": [
+          "Cameras"
+        ],
+        "price": {
+          "min": null,
+          "max": 650,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Stock constraint extracted. Sort extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "Nintendo consoles silver slim",
+    "expected_output_json": {
+      "query": "silver slim",
+      "filters": {
+        "brand": [
+          "Nintendo"
+        ],
+        "categories": [
+          "Gaming Consoles"
+        ],
         "price": {
           "min": null,
           "max": null,
           "currency": "EUR"
         },
         "in_stock": null,
-        "sku": "E8G8JDP0",
+        "sku": null,
         "ean": null
       },
       "sort": {
@@ -1027,20 +723,20 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 1.0
+      "confidence": 0.95
     },
-    "note": "Type: SKU. Exact identifier extracted."
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'silver slim'."
   },
   {
-    "input_query": "smart Acer vacuum available",
+    "input_query": "max mini SONY Televisions ready to ship",
     "expected_output_json": {
-      "query": "smart",
+      "query": "max mini",
       "filters": {
         "brand": [
-          "Acer"
+          "Sony"
         ],
         "categories": [
-          "Vacuum Cleaners"
+          "Televisions"
         ],
         "price": {
           "min": null,
@@ -1059,18 +755,74 @@
       "page_size": 24,
       "confidence": 0.97
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Residuals kept: 'smart'."
+    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Residuals kept: 'max mini'."
   },
   {
-    "input_query": "slim noise cancelling Siemens coffee machine",
+    "input_query": "Smart Watches",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Smart Watches"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.85
+    },
+    "note": "Type: Query. Category extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "vacuum cleaners slim noise cancelling in stock",
     "expected_output_json": {
       "query": "slim noise cancelling",
       "filters": {
+        "brand": [],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.87
+    },
+    "note": "Type: Query. Category extracted. Stock constraint extracted. Residuals kept: 'slim noise cancelling'."
+  },
+  {
+    "input_query": "Acer Monitors oled silver slim",
+    "expected_output_json": {
+      "query": "oled silver slim",
+      "filters": {
         "brand": [
-          "Siemens"
+          "Acer"
         ],
         "categories": [
-          "Coffee Machines"
+          "Monitors"
         ],
         "price": {
           "min": null,
@@ -1089,7 +841,295 @@
       "page_size": 24,
       "confidence": 0.95
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'slim noise cancelling'."
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'oled silver slim'."
+  },
+  {
+    "input_query": "wireless gaming Keyboards",
+    "expected_output_json": {
+      "query": "wireless gaming",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Keyboards"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.85
+    },
+    "note": "Type: Query. Category extracted. Residuals kept: 'wireless gaming'."
+  },
+  {
+    "input_query": "Washing Machines gaming noise cancelling bluetooth maximum 430 eur ready to ship",
+    "expected_output_json": {
+      "query": "gaming noise cancelling bluetooth",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Washing Machines"
+        ],
+        "price": {
+          "min": null,
+          "max": 430,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.9
+    },
+    "note": "Type: Query. Category extracted. Price constraint extracted. Stock constraint extracted. Residuals kept: 'gaming noise cancelling bluetooth'."
+  },
+  {
+    "input_query": "lowest price wireless qled samsung Televisions maximum 950 eur",
+    "expected_output_json": {
+      "query": "wireless qled",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Televisions"
+        ],
+        "price": {
+          "min": null,
+          "max": 950,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Sort extracted. Residuals kept: 'wireless qled'."
+  },
+  {
+    "input_query": "sku IF2GOG72",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "IF2GOG72",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    },
+    "note": "Type: SKU. Exact identifier extracted."
+  },
+  {
+    "input_query": "top tier lightweight LENOVO Monitors",
+    "expected_output_json": {
+      "query": "lightweight",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.96
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Sort extracted. Residuals kept: 'lightweight'."
+  },
+  {
+    "input_query": "budget slim lenovo Tablets ready to ship",
+    "expected_output_json": {
+      "query": "slim",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Tablets"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Sort extracted. Residuals kept: 'slim'."
+  },
+  {
+    "input_query": "Keyboards oled gaming noise cancelling",
+    "expected_output_json": {
+      "query": "oled gaming noise cancelling",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Keyboards"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.85
+    },
+    "note": "Type: Query. Category extracted. Residuals kept: 'oled gaming noise cancelling'."
+  },
+  {
+    "input_query": "Logitech Mice under 1350 eur",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Logitech"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": null,
+          "max": 1350,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "Logitech Keyboards below 1940 eur",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Logitech"
+        ],
+        "categories": [
+          "Keyboards"
+        ],
+        "price": {
+          "min": null,
+          "max": 1940,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.98
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "mechanical console",
+    "expected_output_json": {
+      "query": "mechanical",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Gaming Consoles"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.85
+    },
+    "note": "Type: Query. Category extracted. Residuals kept: 'mechanical'."
   },
   {
     "input_query": "Televisions slim smart between 1620 and 2490 euros",
@@ -1120,22 +1160,22 @@
     "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'slim smart'."
   },
   {
-    "input_query": "Logitech Cameras max ultra oled available",
+    "input_query": "Logitech Headphones ultra oled ios at most 1350 eur",
     "expected_output_json": {
-      "query": "max ultra oled",
+      "query": "ultra oled ios",
       "filters": {
         "brand": [
           "Logitech"
         ],
         "categories": [
-          "Cameras"
+          "Headphones"
         ],
         "price": {
           "min": null,
-          "max": null,
+          "max": 1350,
           "currency": "EUR"
         },
-        "in_stock": true,
+        "in_stock": null,
         "sku": null,
         "ean": null
       },
@@ -1145,12 +1185,12 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.97
+      "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Residuals kept: 'max ultra oled'."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'ultra oled ios'."
   },
   {
-    "input_query": "ergonomic Acer smart watches",
+    "input_query": "ergonomic Acer Keyboards",
     "expected_output_json": {
       "query": "ergonomic",
       "filters": {
@@ -1158,7 +1198,7 @@
           "Acer"
         ],
         "categories": [
-          "Smart Watches"
+          "Keyboards"
         ],
         "price": {
           "min": null,
@@ -1288,7 +1328,7 @@
     "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'portable'."
   },
   {
-    "input_query": "lenovo Washing Machines",
+    "input_query": "lenovo Keyboards",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -1296,7 +1336,7 @@
           "Lenovo"
         ],
         "categories": [
-          "Washing Machines"
+          "Keyboards"
         ],
         "price": {
           "min": null,
@@ -1318,19 +1358,75 @@
     "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
   },
   {
-    "input_query": "smart ergonomic Hp Keyboards maximum 2000 eur",
+    "input_query": "Hp Mice ergonomic mini",
     "expected_output_json": {
-      "query": "smart ergonomic",
+      "query": "ergonomic mini",
       "filters": {
         "brand": [
           "HP"
         ],
         "categories": [
-          "Keyboards"
+          "Mice"
         ],
         "price": {
           "min": null,
-          "max": 2000,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.95
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'ergonomic mini'."
+  },
+  {
+    "input_query": "sku KO64T026",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "KO64T026",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    },
+    "note": "Type: SKU. Exact identifier extracted."
+  },
+  {
+    "input_query": "asus Mice gaming smart below 1080 eur",
+    "expected_output_json": {
+      "query": "gaming smart",
+      "filters": {
+        "brand": [
+          "Asus"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": null,
+          "max": 1080,
           "currency": "EUR"
         },
         "in_stock": null,
@@ -1345,19 +1441,47 @@
       "page_size": 24,
       "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'smart ergonomic'."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'gaming smart'."
   },
   {
-    "input_query": "Logitech products at least 610 eur available",
+    "input_query": "sku VXDP5GJL",
     "expected_output_json": {
       "query": "",
       "filters": {
-        "brand": [
-          "Logitech"
-        ],
+        "brand": [],
         "categories": [],
         "price": {
-          "min": 610,
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "VXDP5GJL",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    },
+    "note": "Type: SKU. Exact identifier extracted."
+  },
+  {
+    "input_query": "Siemens Refrigerators ergonomic android in stock",
+    "expected_output_json": {
+      "query": "ergonomic android",
+      "filters": {
+        "brand": [
+          "Siemens"
+        ],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": null,
           "max": null,
           "currency": "EUR"
         },
@@ -1371,27 +1495,25 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.9
+      "confidence": 0.97
     },
-    "note": "Type: Query. Brand extracted. Price constraint extracted. Stock constraint extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Residuals kept: 'ergonomic android'."
   },
   {
-    "input_query": "Dyson Monitors ios between 1410 and 1570 euros",
+    "input_query": "wireless ergonomic gaming Cameras available now",
     "expected_output_json": {
-      "query": "ios",
+      "query": "wireless ergonomic gaming",
       "filters": {
-        "brand": [
-          "Dyson"
-        ],
+        "brand": [],
         "categories": [
-          "Monitors"
+          "Cameras"
         ],
         "price": {
-          "min": 1410,
-          "max": 1570,
+          "min": null,
+          "max": null,
           "currency": "EUR"
         },
-        "in_stock": null,
+        "in_stock": true,
         "sku": null,
         "ean": null
       },
@@ -1401,21 +1523,21 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.98
+      "confidence": 0.87
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'ios'."
+    "note": "Type: Query. Category extracted. Stock constraint extracted. Residuals kept: 'wireless ergonomic gaming'."
   },
   {
-    "input_query": "white wireless Tablets",
+    "input_query": "Coffee Machines ios minimum 470 eur",
     "expected_output_json": {
-      "query": "white wireless",
+      "query": "ios",
       "filters": {
         "brand": [],
         "categories": [
-          "Tablets"
+          "Coffee Machines"
         ],
         "price": {
-          "min": null,
+          "min": 470,
           "max": null,
           "currency": "EUR"
         },
@@ -1429,14 +1551,70 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.85
+      "confidence": 0.88
     },
-    "note": "Type: Query. Category extracted. Residuals kept: 'white wireless'."
+    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'ios'."
   },
   {
-    "input_query": "high end windows Logitech Headphones",
+    "input_query": "cheapest dell products between 1520 and 2580 euros",
     "expected_output_json": {
-      "query": "windows",
+      "query": "",
+      "filters": {
+        "brand": [
+          "Dell"
+        ],
+        "categories": [],
+        "price": {
+          "min": 1520,
+          "max": 2580,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.89
+    },
+    "note": "Type: Query. Brand extracted. Price constraint extracted. Sort extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "Keyboards gold noise cancelling lightweight over 1580 eur",
+    "expected_output_json": {
+      "query": "gold noise cancelling lightweight",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Keyboards"
+        ],
+        "price": {
+          "min": 1580,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.88
+    },
+    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'gold noise cancelling lightweight'."
+  },
+  {
+    "input_query": "bluetooth mac Logitech Headphones",
+    "expected_output_json": {
+      "query": "bluetooth mac",
       "filters": {
         "brand": [
           "Logitech"
@@ -1454,64 +1632,6 @@
         "ean": null
       },
       "sort": {
-        "by": "price",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.96
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Sort extracted. Residuals kept: 'windows'."
-  },
-  {
-    "input_query": "lowest price max LENOVO available now",
-    "expected_output_json": {
-      "query": "max",
-      "filters": {
-        "brand": [
-          "Lenovo"
-        ],
-        "categories": [],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": true,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "price",
-        "order": "asc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.88
-    },
-    "note": "Type: Query. Brand extracted. Stock constraint extracted. Sort extracted. Residuals kept: 'max'."
-  },
-  {
-    "input_query": "Acer Monitors",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [
-          "Acer"
-        ],
-        "categories": [
-          "Monitors"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
         "by": "relevance",
         "order": "desc"
       },
@@ -1519,78 +1639,20 @@
       "page_size": 24,
       "confidence": 0.95
     },
-    "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'bluetooth mac'."
   },
   {
-    "input_query": "high end Mice smart lightweight below 1650 eur ready to ship",
+    "input_query": "Keyboards lightweight black less than 1710 eur",
     "expected_output_json": {
-      "query": "smart lightweight",
+      "query": "lightweight black",
       "filters": {
         "brand": [],
-        "categories": [
-          "Mice"
-        ],
-        "price": {
-          "min": null,
-          "max": 1650,
-          "currency": "EUR"
-        },
-        "in_stock": true,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "price",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.91
-    },
-    "note": "Type: Query. Category extracted. Price constraint extracted. Stock constraint extracted. Sort extracted. Residuals kept: 'smart lightweight'."
-  },
-  {
-    "input_query": "coffee machine",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Coffee Machines"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.85
-    },
-    "note": "Type: Query. Category extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "Logitech Keyboards",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [
-          "Logitech"
-        ],
         "categories": [
           "Keyboards"
         ],
         "price": {
           "min": null,
-          "max": null,
+          "max": 1710,
           "currency": "EUR"
         },
         "in_stock": null,
@@ -1603,17 +1665,17 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.95
+      "confidence": 0.88
     },
-    "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
+    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'lightweight black'."
   },
   {
-    "input_query": "Canon gaming consoles max pro",
+    "input_query": "Nintendo console gold bluetooth",
     "expected_output_json": {
-      "query": "max pro",
+      "query": "gold bluetooth",
       "filters": {
         "brand": [
-          "Canon"
+          "Nintendo"
         ],
         "categories": [
           "Gaming Consoles"
@@ -1635,38 +1697,10 @@
       "page_size": 24,
       "confidence": 0.95
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'max pro'."
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'gold bluetooth'."
   },
   {
-    "input_query": "Laptops minimum 1500 eur",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Laptops"
-        ],
-        "price": {
-          "min": 1500,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.88
-    },
-    "note": "Type: Query. Category extracted. Price constraint extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "Siemens Tablets",
+    "input_query": "Siemens Washing Machines",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -1674,7 +1708,7 @@
           "Siemens"
         ],
         "categories": [
-          "Tablets"
+          "Washing Machines"
         ],
         "price": {
           "min": null,
@@ -1754,7 +1788,7 @@
     "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'gold smart'."
   },
   {
-    "input_query": "lightweight ios Microsoft smart watches available now",
+    "input_query": "lightweight ios Microsoft Mice available now",
     "expected_output_json": {
       "query": "lightweight ios",
       "filters": {
@@ -1762,7 +1796,7 @@
           "Microsoft"
         ],
         "categories": [
-          "Smart Watches"
+          "Mice"
         ],
         "price": {
           "min": null,
@@ -1784,7 +1818,7 @@
     "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. Residuals kept: 'lightweight ios'."
   },
   {
-    "input_query": "Nikon Headphones",
+    "input_query": "Nikon Cameras",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -1792,7 +1826,7 @@
           "Nikon"
         ],
         "categories": [
-          "Headphones"
+          "Cameras"
         ],
         "price": {
           "min": null,
@@ -1814,7 +1848,7 @@
     "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
   },
   {
-    "input_query": "Miele Tablets gaming lightweight",
+    "input_query": "Miele Refrigerators gaming lightweight",
     "expected_output_json": {
       "query": "gaming lightweight",
       "filters": {
@@ -1822,7 +1856,7 @@
           "Miele"
         ],
         "categories": [
-          "Tablets"
+          "Refrigerators"
         ],
         "price": {
           "min": null,
@@ -1844,7 +1878,7 @@
     "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'gaming lightweight'."
   },
   {
-    "input_query": "APPLE espresso machine",
+    "input_query": "Apple Smart Watches available",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -1852,14 +1886,14 @@
           "Apple"
         ],
         "categories": [
-          "Coffee Machines"
+          "Smart Watches"
         ],
         "price": {
           "min": null,
           "max": null,
           "currency": "EUR"
         },
-        "in_stock": null,
+        "in_stock": true,
         "sku": null,
         "ean": null
       },
@@ -1869,55 +1903,57 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.95
+      "confidence": 0.97
     },
-    "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Stock constraint extracted. No residuals; query is empty."
   },
   {
-    "input_query": "SONY Washing Machines below 430 eur",
+    "input_query": "high end sony Monitors slim wireless black between 260 and 990 euros available",
     "expected_output_json": {
-      "query": "",
+      "query": "slim wireless black",
       "filters": {
         "brand": [
           "Sony"
         ],
         "categories": [
-          "Washing Machines"
+          "Monitors"
         ],
         "price": {
-          "min": null,
-          "max": 430,
+          "min": 260,
+          "max": 990,
           "currency": "EUR"
         },
-        "in_stock": null,
+        "in_stock": true,
         "sku": null,
         "ean": null
       },
       "sort": {
-        "by": "relevance",
+        "by": "price",
         "order": "desc"
       },
       "page": 1,
       "page_size": 24,
       "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Stock constraint extracted. Sort extracted. Residuals kept: 'slim wireless black'."
   },
   {
-    "input_query": "ean 1767254489366",
+    "input_query": "Dyson more than 1140 eur",
     "expected_output_json": {
       "query": "",
       "filters": {
-        "brand": [],
+        "brand": [
+          "Dyson"
+        ],
         "categories": [],
         "price": {
-          "min": null,
+          "min": 1140,
           "max": null,
           "currency": "EUR"
         },
         "in_stock": null,
         "sku": null,
-        "ean": "1767254489366"
+        "ean": null
       },
       "sort": {
         "by": "relevance",
@@ -1925,9 +1961,9 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 1.0
+      "confidence": 0.88
     },
-    "note": "Type: EAN. Exact identifier extracted."
+    "note": "Type: Query. Brand extracted. Price constraint extracted. No residuals; query is empty."
   },
   {
     "input_query": "HP products in stock",
@@ -1958,7 +1994,7 @@
     "note": "Type: Query. Brand extracted. Stock constraint extracted. No residuals; query is empty."
   },
   {
-    "input_query": "wireless gold Acer Refrigerators",
+    "input_query": "wireless gold Acer Mice",
     "expected_output_json": {
       "query": "wireless gold",
       "filters": {
@@ -1966,7 +2002,7 @@
           "Acer"
         ],
         "categories": [
-          "Refrigerators"
+          "Mice"
         ],
         "price": {
           "min": null,
@@ -2154,7 +2190,7 @@
     "note": "Type: Query. Category extracted. Residuals kept: 'windows'."
   },
   {
-    "input_query": "cheapest Nikon Headphones smart ergonomic pro",
+    "input_query": "cheapest Nikon Cameras smart ergonomic pro",
     "expected_output_json": {
       "query": "smart ergonomic pro",
       "filters": {
@@ -2162,7 +2198,7 @@
           "Nikon"
         ],
         "categories": [
-          "Headphones"
+          "Cameras"
         ],
         "price": {
           "min": null,
@@ -2322,7 +2358,7 @@
     "note": "Type: Query. Brand extracted. Stock constraint extracted. No residuals; query is empty."
   },
   {
-    "input_query": "pro ergonomic Nikon smart watch",
+    "input_query": "pro ergonomic Nikon Cameras",
     "expected_output_json": {
       "query": "pro ergonomic",
       "filters": {
@@ -2330,7 +2366,7 @@
           "Nikon"
         ],
         "categories": [
-          "Smart Watches"
+          "Cameras"
         ],
         "price": {
           "min": null,
@@ -2352,7 +2388,7 @@
     "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'pro ergonomic'."
   },
   {
-    "input_query": "Logitech Smartphones between 1020 and 2100 euros",
+    "input_query": "Logitech Keyboards between 1020 and 2100 euros",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -2360,7 +2396,7 @@
           "Logitech"
         ],
         "categories": [
-          "Smartphones"
+          "Keyboards"
         ],
         "price": {
           "min": 1020,
@@ -2408,18 +2444,18 @@
     "note": "Type: EAN. Exact identifier extracted."
   },
   {
-    "input_query": "Acer Monitors ultra bluetooth at least 1410 eur",
+    "input_query": "Acer Mice bluetooth oled slim",
     "expected_output_json": {
-      "query": "ultra bluetooth",
+      "query": "bluetooth oled slim",
       "filters": {
         "brand": [
           "Acer"
         ],
         "categories": [
-          "Monitors"
+          "Mice"
         ],
         "price": {
-          "min": 1410,
+          "min": null,
           "max": null,
           "currency": "EUR"
         },
@@ -2433,9 +2469,9 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 0.98
+      "confidence": 0.95
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'ultra bluetooth'."
+    "note": "Type: Query. Brand extracted. Category extracted. Residuals kept: 'bluetooth oled slim'."
   },
   {
     "input_query": "slim 4k gold Televisions in stock",
@@ -2492,7 +2528,7 @@
     "note": "Type: SKU. Exact identifier extracted."
   },
   {
-    "input_query": "Sony coffee machines",
+    "input_query": "Sony Monitors",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -2500,7 +2536,7 @@
           "Sony"
         ],
         "categories": [
-          "Coffee Machines"
+          "Monitors"
         ],
         "price": {
           "min": null,
@@ -2522,7 +2558,7 @@
     "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
   },
   {
-    "input_query": "Asus Refrigerators slim gaming",
+    "input_query": "Asus Mice slim gaming",
     "expected_output_json": {
       "query": "slim gaming",
       "filters": {
@@ -2530,7 +2566,7 @@
           "Asus"
         ],
         "categories": [
-          "Refrigerators"
+          "Mice"
         ],
         "price": {
           "min": null,
@@ -2578,7 +2614,7 @@
     "note": "Type: SKU. Exact identifier extracted."
   },
   {
-    "input_query": "Dyson espresso machine at most 100 eur",
+    "input_query": "Dyson vacuum",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -2586,14 +2622,44 @@
           "Dyson"
         ],
         "categories": [
-          "Coffee Machines"
+          "Vacuum Cleaners"
         ],
         "price": {
           "min": null,
-          "max": 100,
+          "max": null,
           "currency": "EUR"
         },
         "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.95
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "samsung smartwatch between 630 and 1630 euros available now",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Smart Watches"
+        ],
+        "price": {
+          "min": 630,
+          "max": 1630,
+          "currency": "EUR"
+        },
+        "in_stock": true,
         "sku": null,
         "ean": null
       },
@@ -2605,35 +2671,7 @@
       "page_size": 24,
       "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "Mice below 950 eur",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Mice"
-        ],
-        "price": {
-          "min": null,
-          "max": 950,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.88
-    },
-    "note": "Type: Query. Category extracted. Price constraint extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Stock constraint extracted. No residuals; query is empty."
   },
   {
     "input_query": "most expensive Monitors slim black ultra at most 840 eur ready to ship",
@@ -2690,7 +2728,7 @@
     "note": "Type: SKU. Exact identifier extracted."
   },
   {
-    "input_query": "Nikon Cameras over 1240 eur available now",
+    "input_query": "Nikon Cameras",
     "expected_output_json": {
       "query": "",
       "filters": {
@@ -2701,8 +2739,66 @@
           "Cameras"
         ],
         "price": {
-          "min": 1240,
+          "min": null,
           "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.95
+    },
+    "note": "Type: Query. Brand extracted. Category extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "Monitors more than 1470 eur available",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": 1470,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 0.9
+    },
+    "note": "Type: Query. Category extracted. Price constraint extracted. Stock constraint extracted. No residuals; query is empty."
+  },
+  {
+    "input_query": "slim mechanical Bosch coffee machines less than 1680 eur available now",
+    "expected_output_json": {
+      "query": "slim mechanical",
+      "filters": {
+        "brand": [
+          "Bosch"
+        ],
+        "categories": [
+          "Coffee Machines"
+        ],
+        "price": {
+          "min": null,
+          "max": 1680,
           "currency": "EUR"
         },
         "in_stock": true,
@@ -2717,80 +2813,24 @@
       "page_size": 24,
       "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Stock constraint extracted. No residuals; query is empty."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Stock constraint extracted. Residuals kept: 'slim mechanical'."
   },
   {
-    "input_query": "budget Dyson Smartphones less than 1770 eur",
+    "input_query": "lightweight 4k consoles in stock",
     "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [
-          "Dyson"
-        ],
-        "categories": [
-          "Smartphones"
-        ],
-        "price": {
-          "min": null,
-          "max": 1770,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "price",
-        "order": "asc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.98
-    },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Sort extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "Refrigerators max below 1610 eur",
-    "expected_output_json": {
-      "query": "max",
+      "query": "lightweight 4k",
       "filters": {
         "brand": [],
         "categories": [
-          "Refrigerators"
+          "Gaming Consoles"
         ],
-        "price": {
-          "min": null,
-          "max": 1610,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.88
-    },
-    "note": "Type: Query. Category extracted. Price constraint extracted. Residuals kept: 'max'."
-  },
-  {
-    "input_query": "sku KOF8KRD5",
-    "expected_output_json": {
-      "query": "",
-      "filters": {
-        "brand": [],
-        "categories": [],
         "price": {
           "min": null,
           "max": null,
           "currency": "EUR"
         },
-        "in_stock": null,
-        "sku": "KOF8KRD5",
+        "in_stock": true,
+        "sku": null,
         "ean": null
       },
       "sort": {
@@ -2799,24 +2839,24 @@
       },
       "page": 1,
       "page_size": 24,
-      "confidence": 1.0
+      "confidence": 0.87
     },
-    "note": "Type: SKU. Exact identifier extracted."
+    "note": "Type: Query. Category extracted. Stock constraint extracted. Residuals kept: 'lightweight 4k'."
   },
   {
-    "input_query": "Razer smart watch between 1120 and 1610 euros",
+    "input_query": "LENOVO Mice qled slim at most 1430 eur",
     "expected_output_json": {
-      "query": "",
+      "query": "qled slim",
       "filters": {
         "brand": [
-          "Razer"
+          "Lenovo"
         ],
         "categories": [
-          "Smart Watches"
+          "Mice"
         ],
         "price": {
-          "min": 1120,
-          "max": 1610,
+          "min": null,
+          "max": 1430,
           "currency": "EUR"
         },
         "in_stock": null,
@@ -2831,34 +2871,6 @@
       "page_size": 24,
       "confidence": 0.98
     },
-    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. No residuals; query is empty."
-  },
-  {
-    "input_query": "Headphones lightweight",
-    "expected_output_json": {
-      "query": "lightweight",
-      "filters": {
-        "brand": [],
-        "categories": [
-          "Headphones"
-        ],
-        "price": {
-          "min": null,
-          "max": null,
-          "currency": "EUR"
-        },
-        "in_stock": null,
-        "sku": null,
-        "ean": null
-      },
-      "sort": {
-        "by": "relevance",
-        "order": "desc"
-      },
-      "page": 1,
-      "page_size": 24,
-      "confidence": 0.85
-    },
-    "note": "Type: Query. Category extracted. Residuals kept: 'lightweight'."
+    "note": "Type: Query. Brand extracted. Category extracted. Price constraint extracted. Residuals kept: 'qled slim'."
   }
 ]
