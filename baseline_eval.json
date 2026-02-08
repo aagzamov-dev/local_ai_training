@@ -1,0 +1,2802 @@
+[
+  {
+    "input_query": "Bosch Smartphones",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Bosch"
+        ],
+        "categories": [
+          "Smartphones"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "buy Tablets",
+    "expected_output_json": {
+      "query": "buy",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Tablets"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "ean 0013389083863",
+    "expected_output_json": {
+      "query": "ean 0013389083863",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": "0013389083863"
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Apple Cameras more than 500 eur",
+    "expected_output_json": {
+      "query": "more than 500 eur",
+      "filters": {
+        "brand": [
+          "Apple"
+        ],
+        "categories": [
+          "Cameras"
+        ],
+        "price": {
+          "min": 500,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "cheapest LG Televisions under 960 eur",
+    "expected_output_json": {
+      "query": "cheapest under 960 eur",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [
+          "Televisions"
+        ],
+        "price": {
+          "min": null,
+          "max": 960,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Miele Coffee Machines under 770 eur",
+    "expected_output_json": {
+      "query": "under 770 eur",
+      "filters": {
+        "brand": [
+          "Miele"
+        ],
+        "categories": [
+          "Coffee Machines"
+        ],
+        "price": {
+          "min": null,
+          "max": 770,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "ean 1849593103413",
+    "expected_output_json": {
+      "query": "ean 1849593103413",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": "1849593103413"
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Asus Refrigerators between 500 and 1160 euros available",
+    "expected_output_json": {
+      "query": "between 500 and 1160 euros available",
+      "filters": {
+        "brand": [
+          "Asus"
+        ],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": 500,
+          "max": 1160,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "buy Monitors",
+    "expected_output_json": {
+      "query": "buy",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku C7FD1F42",
+    "expected_output_json": {
+      "query": "sku C7FD1F42",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "C7FD1F42",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Asus Mice between 500 and 1410 euros available",
+    "expected_output_json": {
+      "query": "between 500 and 1410 euros available",
+      "filters": {
+        "brand": [
+          "Asus"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": 500,
+          "max": 1410,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "most expensive Lenovo Keyboards",
+    "expected_output_json": {
+      "query": "most expensive",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Keyboards"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Asus Laptops between 230 and 1150 euros ready to ship",
+    "expected_output_json": {
+      "query": "between 230 and 1150 euros ready to ship",
+      "filters": {
+        "brand": [
+          "Asus"
+        ],
+        "categories": [
+          "Laptops"
+        ],
+        "price": {
+          "min": 230,
+          "max": 1150,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "premium Dyson Mice between 390 and 770 euros ready to ship",
+    "expected_output_json": {
+      "query": "premium between 390 and 770 euros ready to ship",
+      "filters": {
+        "brand": [
+          "Dyson"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": 390,
+          "max": 770,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "ean 9653287101226",
+    "expected_output_json": {
+      "query": "ean 9653287101226",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": "9653287101226"
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dyson Coffee Machines between 390 and 1260 euros ready to ship",
+    "expected_output_json": {
+      "query": "between 390 and 1260 euros ready to ship",
+      "filters": {
+        "brand": [
+          "Dyson"
+        ],
+        "categories": [
+          "Coffee Machines"
+        ],
+        "price": {
+          "min": 390,
+          "max": 1260,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Bosch Gaming Consoles",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Bosch"
+        ],
+        "categories": [
+          "Gaming Consoles"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "cheapest Siemens Laptops over 850 eur",
+    "expected_output_json": {
+      "query": "cheapest over 850 eur",
+      "filters": {
+        "brand": [
+          "Siemens"
+        ],
+        "categories": [
+          "Laptops"
+        ],
+        "price": {
+          "min": 850,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Asus Vacuum Cleaners",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Asus"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "ean 8932528809570",
+    "expected_output_json": {
+      "query": "ean 8932528809570",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": "8932528809570"
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Philips Televisions below 240 eur",
+    "expected_output_json": {
+      "query": "below 240 eur",
+      "filters": {
+        "brand": [
+          "Philips"
+        ],
+        "categories": [
+          "Televisions"
+        ],
+        "price": {
+          "min": null,
+          "max": 240,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Sony Monitors",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Sony"
+        ],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "LG Tablets",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [
+          "Tablets"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "ean 3834657871331",
+    "expected_output_json": {
+      "query": "ean 3834657871331",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": "3834657871331"
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku 585F47B2",
+    "expected_output_json": {
+      "query": "sku 585F47B2",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "585F47B2",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "cheapest Samsung Televisions",
+    "expected_output_json": {
+      "query": "cheapest",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Televisions"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Sony Vacuum Cleaners cheaper than 700 eur",
+    "expected_output_json": {
+      "query": "cheaper than 700 eur",
+      "filters": {
+        "brand": [
+          "Sony"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": 700,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "high end Lenovo Cameras between 400 and 1120 euros available",
+    "expected_output_json": {
+      "query": "high end between 400 and 1120 euros available",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Cameras"
+        ],
+        "price": {
+          "min": 400,
+          "max": 1120,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "cheapest Logitech Washing Machines more than 1290 eur",
+    "expected_output_json": {
+      "query": "cheapest more than 1290 eur",
+      "filters": {
+        "brand": [
+          "Logitech"
+        ],
+        "categories": [
+          "Washing Machines"
+        ],
+        "price": {
+          "min": 1290,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dyson Monitors",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Dyson"
+        ],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "high end Lenovo Televisions",
+    "expected_output_json": {
+      "query": "high end",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Televisions"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Logitech products",
+    "expected_output_json": {
+      "query": "products",
+      "filters": {
+        "brand": [
+          "Logitech"
+        ],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Razer Cameras",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Razer"
+        ],
+        "categories": [
+          "Cameras"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku 00BDE673",
+    "expected_output_json": {
+      "query": "sku 00BDE673",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "00BDE673",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dell products",
+    "expected_output_json": {
+      "query": "products",
+      "filters": {
+        "brand": [
+          "Dell"
+        ],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Samsung Tablets between 340 and 540 euros available now",
+    "expected_output_json": {
+      "query": "between 340 and 540 euros available now",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Tablets"
+        ],
+        "price": {
+          "min": 340,
+          "max": 540,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "least expensive Philips Washing Machines between 450 and 1270 euros available",
+    "expected_output_json": {
+      "query": "least expensive between 450 and 1270 euros available",
+      "filters": {
+        "brand": [
+          "Philips"
+        ],
+        "categories": [
+          "Washing Machines"
+        ],
+        "price": {
+          "min": 450,
+          "max": 1270,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Samsung Monitors",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Nikon Vacuum Cleaners",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Nikon"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku 78E99EC9",
+    "expected_output_json": {
+      "query": "sku 78E99EC9",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "78E99EC9",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Sony Gaming Consoles",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Sony"
+        ],
+        "categories": [
+          "Gaming Consoles"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Bosch Mice between 460 and 970 euros in stock",
+    "expected_output_json": {
+      "query": "between 460 and 970 euros in stock",
+      "filters": {
+        "brand": [
+          "Bosch"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": 460,
+          "max": 970,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Canon Smart Watches between 260 and 720 euros ready to ship",
+    "expected_output_json": {
+      "query": "between 260 and 720 euros ready to ship",
+      "filters": {
+        "brand": [
+          "Canon"
+        ],
+        "categories": [
+          "Smart Watches"
+        ],
+        "price": {
+          "min": 260,
+          "max": 720,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "LG Gaming Consoles between 290 and 1070 euros ready to ship",
+    "expected_output_json": {
+      "query": "between 290 and 1070 euros ready to ship",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [
+          "Gaming Consoles"
+        ],
+        "price": {
+          "min": 290,
+          "max": 1070,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Apple Refrigerators",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Apple"
+        ],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku A5CB57C6",
+    "expected_output_json": {
+      "query": "sku A5CB57C6",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "A5CB57C6",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Miele products",
+    "expected_output_json": {
+      "query": "products",
+      "filters": {
+        "brand": [
+          "Miele"
+        ],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dell Refrigerators more than 1490 eur",
+    "expected_output_json": {
+      "query": "more than 1490 eur",
+      "filters": {
+        "brand": [
+          "Dell"
+        ],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": 1490,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Canon Smartphones",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Canon"
+        ],
+        "categories": [
+          "Smartphones"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku B1AD8597",
+    "expected_output_json": {
+      "query": "sku B1AD8597",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "B1AD8597",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "buy Laptops",
+    "expected_output_json": {
+      "query": "buy",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Laptops"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "buy Headphones",
+    "expected_output_json": {
+      "query": "buy",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Headphones"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Asus products",
+    "expected_output_json": {
+      "query": "products",
+      "filters": {
+        "brand": [
+          "Asus"
+        ],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Samsung Smartphones below 950 eur",
+    "expected_output_json": {
+      "query": "below 950 eur",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Smartphones"
+        ],
+        "price": {
+          "min": null,
+          "max": 950,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dell Monitors above 1230 eur",
+    "expected_output_json": {
+      "query": "above 1230 eur",
+      "filters": {
+        "brand": [
+          "Dell"
+        ],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": 1230,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku E7248736",
+    "expected_output_json": {
+      "query": "sku E7248736",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "E7248736",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "most expensive Lg Vacuum Cleaners",
+    "expected_output_json": {
+      "query": "most expensive Lg",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku ADB9E77D",
+    "expected_output_json": {
+      "query": "sku ADB9E77D",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "ADB9E77D",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Samsung Mice below 1010 eur",
+    "expected_output_json": {
+      "query": "below 1010 eur",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": null,
+          "max": 1010,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Bosch Smart Watches",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Bosch"
+        ],
+        "categories": [
+          "Smart Watches"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "LG Mice between 250 and 650 euros available",
+    "expected_output_json": {
+      "query": "between 250 and 650 euros available",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": 250,
+          "max": 650,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dell Monitors",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Dell"
+        ],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Lenovo Headphones between 200 and 530 euros available now",
+    "expected_output_json": {
+      "query": "between 200 and 530 euros available now",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Headphones"
+        ],
+        "price": {
+          "min": 200,
+          "max": 530,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Lenovo Televisions between 390 and 1030 euros ready to ship",
+    "expected_output_json": {
+      "query": "between 390 and 1030 euros ready to ship",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Televisions"
+        ],
+        "price": {
+          "min": 390,
+          "max": 1030,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "buy Smartphones",
+    "expected_output_json": {
+      "query": "buy",
+      "filters": {
+        "brand": [],
+        "categories": [
+          "Smartphones"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Sony Cameras cheaper than 810 eur",
+    "expected_output_json": {
+      "query": "cheaper than 810 eur",
+      "filters": {
+        "brand": [
+          "Sony"
+        ],
+        "categories": [
+          "Cameras"
+        ],
+        "price": {
+          "min": null,
+          "max": 810,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Siemens Smartphones between 170 and 700 euros available",
+    "expected_output_json": {
+      "query": "between 170 and 700 euros available",
+      "filters": {
+        "brand": [
+          "Siemens"
+        ],
+        "categories": [
+          "Smartphones"
+        ],
+        "price": {
+          "min": 170,
+          "max": 700,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Samsung Laptops over 1620 eur",
+    "expected_output_json": {
+      "query": "over 1620 eur",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Laptops"
+        ],
+        "price": {
+          "min": 1620,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Logitech Coffee Machines under 1400 eur",
+    "expected_output_json": {
+      "query": "under 1400 eur",
+      "filters": {
+        "brand": [
+          "Logitech"
+        ],
+        "categories": [
+          "Coffee Machines"
+        ],
+        "price": {
+          "min": null,
+          "max": 1400,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku 503A72C3",
+    "expected_output_json": {
+      "query": "sku 503A72C3",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "503A72C3",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Canon Mice",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Canon"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Hp Smart Watches",
+    "expected_output_json": {
+      "query": "Hp",
+      "filters": {
+        "brand": [
+          "HP"
+        ],
+        "categories": [
+          "Smart Watches"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Siemens Coffee Machines",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Siemens"
+        ],
+        "categories": [
+          "Coffee Machines"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Philips Vacuum Cleaners",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Philips"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "high end Siemens Washing Machines between 280 and 1180 euros available",
+    "expected_output_json": {
+      "query": "high end between 280 and 1180 euros available",
+      "filters": {
+        "brand": [
+          "Siemens"
+        ],
+        "categories": [
+          "Washing Machines"
+        ],
+        "price": {
+          "min": 280,
+          "max": 1180,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dell Coffee Machines",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Dell"
+        ],
+        "categories": [
+          "Coffee Machines"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Apple Headphones between 280 and 740 euros available now",
+    "expected_output_json": {
+      "query": "between 280 and 740 euros available now",
+      "filters": {
+        "brand": [
+          "Apple"
+        ],
+        "categories": [
+          "Headphones"
+        ],
+        "price": {
+          "min": 280,
+          "max": 740,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "ean 7387214895134",
+    "expected_output_json": {
+      "query": "ean 7387214895134",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": "7387214895134"
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "LG products",
+    "expected_output_json": {
+      "query": "products",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "ean 9367632016328",
+    "expected_output_json": {
+      "query": "ean 9367632016328",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": "9367632016328"
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku C7C289CB",
+    "expected_output_json": {
+      "query": "sku C7C289CB",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "C7C289CB",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Canon Vacuum Cleaners between 480 and 1080 euros available now",
+    "expected_output_json": {
+      "query": "between 480 and 1080 euros available now",
+      "filters": {
+        "brand": [
+          "Canon"
+        ],
+        "categories": [
+          "Vacuum Cleaners"
+        ],
+        "price": {
+          "min": 480,
+          "max": 1080,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Canon Washing Machines",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Canon"
+        ],
+        "categories": [
+          "Washing Machines"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku 292EBBBA",
+    "expected_output_json": {
+      "query": "sku 292EBBBA",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "292EBBBA",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Razer Headphones between 250 and 800 euros available now",
+    "expected_output_json": {
+      "query": "between 250 and 800 euros available now",
+      "filters": {
+        "brand": [
+          "Razer"
+        ],
+        "categories": [
+          "Headphones"
+        ],
+        "price": {
+          "min": 250,
+          "max": 800,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Razer Laptops cheaper than 1920 eur",
+    "expected_output_json": {
+      "query": "cheaper than 1920 eur",
+      "filters": {
+        "brand": [
+          "Razer"
+        ],
+        "categories": [
+          "Laptops"
+        ],
+        "price": {
+          "min": null,
+          "max": 1920,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "least expensive Siemens Mice under 1480 eur",
+    "expected_output_json": {
+      "query": "least expensive under 1480 eur",
+      "filters": {
+        "brand": [
+          "Siemens"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": null,
+          "max": 1480,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "LG Monitors between 230 and 510 euros available now",
+    "expected_output_json": {
+      "query": "between 230 and 510 euros available now",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [
+          "Monitors"
+        ],
+        "price": {
+          "min": 230,
+          "max": 510,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "sku 64BFB753",
+    "expected_output_json": {
+      "query": "sku 64BFB753",
+      "filters": {
+        "brand": [],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": "64BFB753",
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Dyson Mice between 470 and 690 euros available now",
+    "expected_output_json": {
+      "query": "between 470 and 690 euros available now",
+      "filters": {
+        "brand": [
+          "Dyson"
+        ],
+        "categories": [
+          "Mice"
+        ],
+        "price": {
+          "min": 470,
+          "max": 690,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Philips Cameras over 1090 eur",
+    "expected_output_json": {
+      "query": "over 1090 eur",
+      "filters": {
+        "brand": [
+          "Philips"
+        ],
+        "categories": [
+          "Cameras"
+        ],
+        "price": {
+          "min": 1090,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Lenovo Refrigerators",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Lenovo"
+        ],
+        "categories": [
+          "Refrigerators"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Nikon Smartphones between 340 and 970 euros available now",
+    "expected_output_json": {
+      "query": "between 340 and 970 euros available now",
+      "filters": {
+        "brand": [
+          "Nikon"
+        ],
+        "categories": [
+          "Smartphones"
+        ],
+        "price": {
+          "min": 340,
+          "max": 970,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "LG Coffee Machines between 440 and 670 euros available now",
+    "expected_output_json": {
+      "query": "between 440 and 670 euros available now",
+      "filters": {
+        "brand": [
+          "LG"
+        ],
+        "categories": [
+          "Coffee Machines"
+        ],
+        "price": {
+          "min": 440,
+          "max": 670,
+          "currency": "EUR"
+        },
+        "in_stock": true,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Apple Laptops",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Apple"
+        ],
+        "categories": [
+          "Laptops"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Razer products",
+    "expected_output_json": {
+      "query": "products",
+      "filters": {
+        "brand": [
+          "Razer"
+        ],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "premium Logitech Headphones over 300 eur",
+    "expected_output_json": {
+      "query": "premium over 300 eur",
+      "filters": {
+        "brand": [
+          "Logitech"
+        ],
+        "categories": [
+          "Headphones"
+        ],
+        "price": {
+          "min": 300,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "Miele Televisions",
+    "expected_output_json": {
+      "query": "",
+      "filters": {
+        "brand": [
+          "Miele"
+        ],
+        "categories": [
+          "Televisions"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "relevance",
+        "order": "desc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "least expensive Samsung Cameras",
+    "expected_output_json": {
+      "query": "least expensive",
+      "filters": {
+        "brand": [
+          "Samsung"
+        ],
+        "categories": [
+          "Cameras"
+        ],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  },
+  {
+    "input_query": "cheapest Apple products",
+    "expected_output_json": {
+      "query": "cheapest products",
+      "filters": {
+        "brand": [
+          "Apple"
+        ],
+        "categories": [],
+        "price": {
+          "min": null,
+          "max": null,
+          "currency": "EUR"
+        },
+        "in_stock": null,
+        "sku": null,
+        "ean": null
+      },
+      "sort": {
+        "by": "price",
+        "order": "asc"
+      },
+      "page": 1,
+      "page_size": 24,
+      "confidence": 1.0
+    }
+  }
+]
